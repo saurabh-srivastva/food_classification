@@ -1,0 +1,32 @@
+description: Ultralytics YOLOv8n-cls model trained on /content/food-dataset
+author: Ultralytics
+date: '2025-11-12T22:12:52.802749'
+version: 8.3.228
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 1
+task: classify
+batch: 1
+imgsz:
+- 224
+- 224
+names:
+  0: Bread
+  1: Dairy product
+  2: Dessert
+  3: Egg
+  4: Fried food
+  5: Meat
+  6: Noodles-Pasta
+  7: Rice
+  8: Seafood
+  9: Soup
+  10: Vegetable-Fruit
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  dynamic: false
+  nms: false
+channels: 3
