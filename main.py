@@ -147,6 +147,21 @@ def main():
                     """,
                     unsafe_allow_html=True
                 )
+    
+    # --- CREDITS SECTION (Added) ---
+    st.markdown("---") # Horizontal line separator
+    st.markdown(
+        """
+        <div style="text-align: center; font-size: 0.75em; color: #777; margin-top: 30px;">
+            Created by: &nbsp;
+            <span style="color: #4CAF50;">PALLAVI</span> ❤️ &nbsp; | &nbsp; 
+            <span style="color: #4CAF50;">ISHA</span> 🌟 &nbsp; | &nbsp;
+            <span style="color: #4CAF50;">ANKIT</span> &nbsp; | &nbsp; 
+            <span style="color: #4CAF50;">JEET</span>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
 if __name__ == "__main__":
     main()
