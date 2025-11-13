@@ -123,6 +123,8 @@ def main():
 
     # --- WEBCAM ("CLICK") TAB ---
     with tab2:
+        # Note: Streamlit's camera_input can sometimes be tricky in certain deployment environments
+        # but is generally the preferred way to get webcam input.
         img_file_buffer = st.camera_input("Click a photo of your food!")
 
         if img_file_buffer:
@@ -153,11 +155,11 @@ def main():
     st.markdown(
         """
         <div style="text-align: center; font-size: 0.75em; color: #777; margin-top: 30px;">
-            Created by: &nbsp;
-            <span style="color: #4CAF50;">PALLAVI</span> ❤️ &nbsp; | &nbsp; 
-            <span style="color: #4CAF50;">ISHA</span> 🌟 &nbsp; | &nbsp;
-            <span style="color: #4CAF50;">ANKIT</span> &nbsp; | &nbsp; 
-            <span style="color: #4CAF50;">JEET</span>
+            Created by: &nbsp;
+            <span style="color: #4CAF50;">PALLAVI</span> ❤️ &nbsp; | &nbsp; 
+            <span style="color: #4CAF50;">ISHA</span> 🌟 &nbsp; | &nbsp;
+            <span style="color: #4CAF50;">ANKIT</span> &nbsp; | &nbsp; 
+            <span style="color: #4CAF50;">JEET</span>
         </div>
         """,
         unsafe_allow_html=True
